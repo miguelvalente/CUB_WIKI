@@ -1,24 +1,18 @@
 # CUB_WIKI
 
-In the original [DataSet Repo](https://github.com/EthanZhu90/ZSL_PP_CVPR17)  (_Elhosein et .al_) there is no difference between CUBird_Sentences and CUBird_WikiArticles. In here you find the CUBird_WikiArticles as one single piece of text with numbered sentences removed. Easier to use wget/git clone.
+In the original [DataSet Repo](https://github.com/EthanZhu90/ZSL_PP_CVPR17)  (_Elhosein et .al_) there is no difference between CUBird_Sentences and CUBird_WikiArticles. In here you find the CUBird_WikiArticles as one single piece of text with numbered sentences removed as well as some standart data splits. This repo only exist for easu of use (wget/git clone). Refer to original authors for any questions.
 
-<<<<<<< HEAD
+Two different types of splits for CUB:
+ 1. Proposed Split 2.0 from _Zero-Shot Learning - A ComprehensiveEvaluation of the Good, the Bad and the Ugly_ 
+ 2. Easy and Hard Split from _Elhosein et .al_ (No Test Set)
+
 set_id
 
 * test set = 2
 * train set = 1
 * val set = 0
 
-    Strucutre
-=======
-img_id
-set_id is 1 for train_set and 0 for test_set
-
-    Structure of files
->>>>>>> 9a348c90a7f198e2994892689c945ae3cf7908b6
+Files Structure
     img_id   set_id 
-* Hard Split for CUB2011
-* Easy Split for CUB2011
 
-Train = 1
-Test = 0
+
