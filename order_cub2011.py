@@ -8,7 +8,7 @@ def order_res101mat(path, savepath='data/xlsa17/data/CUB/res101_ordered.mat'):
     features = res_raw['features'].transpose()
 
     features_ordered = np.stack([f for _, f in sorted(zip(labels, features), key=lambda pair: pair[0])])
-    savemat(savepath, 'features':  features_ordered)
+    savemat(savepath, {'features':  features_ordered})
 
 
 def order_att_splits(path, savepath='data/xlsa17/data/CUB/att_splits_ordered.mat'):
