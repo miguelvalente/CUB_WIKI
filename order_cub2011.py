@@ -13,7 +13,7 @@ def order_res101mat(path, savepath='data/xlsa17/data/CUB/res101_ordered.mat'):
 
 def order_att_splits(path, savepath='data/xlsa17/data/CUB/att_splits_ordered.mat'):
     att_raw = loadmat(path)
-    att = att_raw['att'].transpose() 
+    att = att_raw['original_att'].transpose()
     with open('data/xlsa17/data/CUB/allclasses.txt') as f:
         all_classes = f.readlines()
 
@@ -23,5 +23,5 @@ def order_att_splits(path, savepath='data/xlsa17/data/CUB/att_splits_ordered.mat
     savemat(savepath, att_ordered)
 
 
-order_res101mat('data/xlsa17/data/CUB/res101.mat')
+# order_res101mat('data/xlsa17/data/CUB/res101.mat')
 order_att_splits('data/xlsa17/data/CUB/att_splits.mat')
