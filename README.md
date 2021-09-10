@@ -8,10 +8,14 @@ Two different types of splits for CUB:
 
 set_id
 
-* test set = 2
 * train set = 1
 * val set = 0
 
-Files Structure
+seen_unseen
 
-    img_id   set_id 
+* unseen = 0
+* seen = 1
+
+Files Structure for Proposed Split
+
+    img_id   set_id  seen_unseen
