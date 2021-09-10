@@ -10,6 +10,7 @@ set_id
 
 * train set = 1
 * val set = 0
+* test set = 2
 
 seen_unseen
 
